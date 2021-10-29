@@ -1,0 +1,93 @@
+article {
+    max-width: 60rem;
+    margin: 5rem auto;
+    border-radius: 4px;
+    box-sizing: border-box;
+    z-index: 100;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(231, 227, 227, 0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    position: relative;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+    article:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+  #main-image {
+    width: 40%;
+    height: 40%;
+    margin: 1em;
+    border-radius: 50%;
+  }
+  
+  section:first-of-type {
+    margin-top: 6rem;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h1{
+    font-size: 3em;
+  }
+  
+  address span {
+    font-weight: bold;
+  }
+  
+  #details h2 {
+    margin-bottom: 0.5rem;
+  }
+  
+  #details > p {
+    color: #665386;
+    padding: 1rem;
+    border-radius: 4px;
+    max-width: 80%;
+    margin: auto;
+  }
+  
+  #details footer {
+    color: #696472;
+  }
+  
+  #details footer a {
+    color: #350490;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  #registration ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #registration label {
+    font-weight: bold;
+    color: #46424d;
+    margin-right: 1rem;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  #registration input {
+    font: inherit;
+    width: 40%;
+    background-color: #f8f8f8;
+    border: 1px solid #4b4753;
+    border-radius: 4px;
+    padding: 0.25rem;
+  }
+  
+  #registration-actions {
+    margin-top: 2rem;
+  }
+  
+  #registration .errorlist {
+    margin-bottom: 0.5rem;
+    color: #880824;
+  }

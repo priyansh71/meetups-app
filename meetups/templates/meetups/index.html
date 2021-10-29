@@ -1,0 +1,41 @@
+{% extends 'meetups/base/base.html' %}
+
+{% load static %}
+
+{% block title %}Meetups{% endblock %}
+
+{% block site_css %}
+    <link
+      rel="stylesheet"
+      href="{% static 'meetups/styles/all-meetups.css' %}"
+    />
+
+{% endblock %}
+
+{% block main_heading %}
+  Great events coming up!
+{% endblock %}
+
+{% block body %}
+
+      <section>
+        <h2>Upcoming Meetups</h2>
+        <ol>
+          {% for item in meetups %}
+            {% include 'meetups/includes/card.html' with title=item.title location=item.location image=item.image.url slug=item.slug %} 
+          {% endfor %}
+        </ol>
+      </section>
+
+{% endblock %}
+
+
+  <!-- <h1>Meetups are :</h1>
+    {% if show_meetups %}
+        {% for item in meetups %}
+        <p>{{ item.title }}</p> Looping through using interpolation
+        {% endfor %}
+    {% else %}
+        <h2>No meetups found.</h2>
+    {% endif %}    Always end your ifs, no need to indent
+    <h3>Hello world.</h3>  -->

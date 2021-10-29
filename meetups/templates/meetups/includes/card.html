@@ -1,0 +1,17 @@
+<li class="meetup-item">
+  <article>
+    <div class="meetup-summary">
+      <div class="meetup-image">
+        <img src="{{ image }}" alt="{{ title }}" />
+      </div>
+    </div>
+    <div class="meetup-details">
+      <h3>{{ title }}</h3>
+      <address>{{ location }}</address>
+    </div>
+    <div class="meetup-actions">
+      <!-- <a href="/meetups/{{ item.slug }}" class="btn">More details</a> -->                
+      <a href="{% url 'meetup-detail' slug %}" class="btn">More details</a>
+      <!-- Using this, Django dynamically generates the absolute path for each item depending on the path of the name in the urls.py file.-->
+  </article>
+</li>
